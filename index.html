@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzarendelés Űrlap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <form id="pizzaOrderForm">
+      <h2>Pizzarendelés</h2>
+
+      <!-- Név mező -->
+      <label for="name">Név</label>
+      <input type="text" id="name" name="name" placeholder="Add meg a neved" required>
+	   
+	   <!-- Cím mező -->
+      <label for="address">Cím</label>
+      <input type="text" id="address" name="address" placeholder="Add meg a címed" required>
+	  
+	  <!--Telefon szám mező -->
+	  <label for="tszam">Telefon szám</label>
+      <input type="text" id="tszam" name="tszam" placeholder="Add meg a telefonszamod" required>
+	  
+	 <!-- Pizza választása -->
+      <label for="pizza">Pizza típusa</label>
+      <select id="pizza" name="pizza" required>
+        <option value="">Válaszd ki a pizzát</option>
+        <option value="margherita">Margherita</option>
+		 <option value="magyaros">Magyaros</option>
+        <option value="hawaii">Hawaii</option>
+        <option value="pepperoni">Pepperoni</option>
+        <option value="four_cheese">Négy sajt</option>
+      </select>
+
+      <!-- Méret kiválasztása -->
+      <label>Méret</label>
+      <label>
+        <input type="radio" name="size" value="small" required> Kicsi (24 cm)
+      </label>
+      <label>
+        <input type="radio" name="size" value="medium"> Közepes (32 cm)
+      </label>
+      <label>
+        <input type="radio" name="size" value="large"> Nagy (40 cm)
+      </label>
+
+      <!-- Extra feltétek kiválasztása -->
+      <label>Extra feltétek</label>
+      <label>
+        <input type="checkbox" name="topping" value="bacon"> Bacon
+      </label>
+	   <label>
+        <input type="checkbox" name="topping" value="sonka"> Sonka
+      </label>
+      <label>
+        <input type="checkbox" name="topping" value="extra_cheese"> Extra sajt
+      </label>
+      <label>
+        <input type="checkbox" name="topping" value="mushrooms"> Gomba
+      </label>
+      <label>
+        <input type="checkbox" name="topping" value="olives"> Olívabogyó
+      </label>
+	  
+	      <!-- liszt tipusa -->
+	  <label for="liszt">liszt tipusa</label>
+      <select id="liszt" name="liszt" required>
+        <option value="">Válaszd ki a liszt tipusát</option>
+        <option value="tk">teljes kiőrlésü</option>
+		 <option value="fl">fehér liszt</option>
+		  <option value="gm">glutén mentes</option>
+		 </select>
+
+      <!-- Küldés gomb -->
+      <button type="submit">Rendelés leadása</button>
+    </form>
+  </div>
+
+  <!-- Beküldött adatok megjelenítése -->
+  <div id="orderSummary" class="order-box" style="display: none;">
+    <h3>Rendelési összesítő</h3>
+    <p><strong>Név:</strong> <span id="displayName"></span></p>
+	  <p><strong>Telefonszám:</strong> <span id="displayTszam"></span></p>
+   <p><strong>Cím:</strong> <span id="displayAddress"></span></p>
+     <p><strong>Liszt tipusa:</strong> <span id="displayLiszt"></span></p>
+	<p><strong>Pizza típusa:</strong> <span id="displayPizza"></span></p>
+    <p><strong>Méret:</strong> <span id="displaySize"></span></p>
+    <p><strong>Extra feltétek:</strong> <span id="displayToppings"></span></p>
+  </div>
+
+
+<a href="Étlap.html">Ugrás az étlapra</a>
+ 
+ <script src="js.js"></script>
+</body>
+</html>

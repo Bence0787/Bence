@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c93434;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px; /* Növeljük a szélességet */
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.menu-link {
+    text-decoration: none; /* Eltávolítja az aláhúzást a linkről */
+    color: inherit; /* Örökli a szöveg színét */
+}
+
+.pizza-list {
+    display: flex; /* Flexbox elrendezés */
+    flex-wrap: wrap; /* Tördelés, ha nem fér el */
+    justify-content: space-between; /* Egyenletes elosztás */
+    margin-top: 20px;
+}
+
+.pizza-item {
+    text-align: center; /* Középre igazítja a szöveget */
+    margin: 20px; /* Térköz a pizzák között */
+    flex: 1 1 calc(20% - 40px); /* Rugalmas méret, minimum 20% szélesség */
+    box-sizing: border-box; /* Margó és padding figyelembevétele */
+}
+
+.pizza-info h2 {
+    margin: 10px 0 5px; /* Margó a cím körül */
+}
+
+.pizza-info p {
+    margin: 0; /* Eltávolítja a margót az ár körül */
+}
+
+.pizza-image {
+    width: 40px; /* Kép szélessége */
+    height: auto; /* Magasság automatikus, hogy megőrizzük az arányokat */
+    border-radius: 4px; /* Lekerekített sarkok */
+}

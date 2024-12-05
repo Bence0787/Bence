@@ -1,0 +1,168 @@
+<h4>Pizza Étterem Étlap</h4>
+    
+       
+   
+<main>
+        
+
+       
+<h5>Válasszon a pizzák közül:</h5>
+        
+       
+<ul>
+            
+           
+<li>                
+               
+<span class="pizza-name">Margherita</span>
+
+
+               
+<button class="order-button">3000</button>
+            
+            </li
+
+           
+</li>
+            
+
+           
+<li>
+                
+               
+<span class="pizza-name">Magyaros</span>
+                
+               
+<button class="order-button">3200</button>
+            
+            </li
+
+           
+</li>
+            
+
+
+           
+<li>
+                
+<span class="pizza-name">Hawaii</span>
+                
+
+               
+<button class="order-button">3150</button>
+            
+            </li
+
+           
+</li>
+
+<li>
+                
+
+               
+<span class="pizza-name">Pepperóni</span>
+
+
+               
+<button class="order-button">3400</button>
+            
+            </li
+
+</li>
+            
+
+           
+<li>
+                
+
+               
+<span class="pizza-name">Négy sajt</span>
+                
+               
+<button class="order-button">3500</button>
+            
+            </li
+
+</li>
+        
+        </ul
+
+
+       
+</ul>
+    
+    </main
+
+</main>
+
+  <script src="js.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+h3 {
+  text-align: center;
+  color: #333;
+}
+{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #d35400;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        li:hover {
+            background-color: #f0f0f0;
+        }
+        .pizza-name {
+            font-weight: bold;
+        }
+        .order-button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .order-button:hover {
+            background-color: #2ecc71;
+        }
+		
